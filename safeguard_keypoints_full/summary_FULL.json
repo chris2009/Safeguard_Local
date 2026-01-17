@@ -1,0 +1,13 @@
+{
+  "model": "BlazePose FULL",
+  "model_file": "pose_landmarker_full.task",
+  "created": "2026-01-17T00:57:04.627007",
+  "processing_time_seconds": 541.53,
+  "processing_time_minutes": 9.03,
+  "images_per_second": 31.26,
+  "total_processed": 10690,
+  "failed": 6240,
+  "success_rate": "63.14%",
+  "falls": 1658,
+  "adl": 9032
+}

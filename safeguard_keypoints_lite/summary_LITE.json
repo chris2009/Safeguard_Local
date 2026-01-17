@@ -1,0 +1,13 @@
+{
+  "model": "BlazePose LITE",
+  "model_file": "pose_landmarker_lite.task",
+  "created": "2026-01-17T00:54:44.211589",
+  "processing_time_seconds": 417.17,
+  "processing_time_minutes": 6.95,
+  "images_per_second": 40.58,
+  "total_processed": 10815,
+  "failed": 6115,
+  "success_rate": "63.88%",
+  "falls": 1705,
+  "adl": 9110
+}

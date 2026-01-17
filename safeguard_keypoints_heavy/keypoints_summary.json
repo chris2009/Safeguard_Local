@@ -1,0 +1,25 @@
+{
+  "created": "2026-01-17T01:02:28.827192",
+  "project": "SafeGuard Vision AI",
+  "author": "Christian Cajusol - MIT Global Teaching Labs",
+  "model": "BlazePose (MediaPipe PoseLandmarker Heavy)",
+  "mediapipe_version": "0.10.31",
+  "execution": "Local (RTX 4070 + i9-14gen)",
+  "statistics": {
+    "total_processed": 10800,
+    "failed": 6130,
+    "success_rate": "63.8%",
+    "falls": 1664,
+    "adl": 9136,
+    "by_dataset": {
+      "le2i": 7577,
+      "ur_fall": 3223
+    }
+  },
+  "features": {
+    "keypoints": 33,
+    "values_per_keypoint": 4,
+    "total_features": 132
+  },
+  "processing_time_minutes": 15.1
+}

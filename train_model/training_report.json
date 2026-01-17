@@ -1,0 +1,34 @@
+{
+  "project": "SafeGuard Vision AI",
+  "author": "Christian Cajusol - MIT Global Teaching Labs",
+  "model_type": "RandomForestClassifier",
+  "training_date": "2026-01-17T10:14:11.006176",
+  "parameters": {
+    "max_depth": 20,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "metrics": {
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.981,
+    "test_precision": 0.9902,
+    "test_recall": 0.8886,
+    "test_f1_score": 0.9366,
+    "test_auc_roc": 0.998,
+    "cv_f1_mean": 0.95,
+    "cv_f1_std": 0.0141
+  },
+  "feature_count": 140,
+  "classes": {
+    "0": "ADL (Actividad Normal)",
+    "1": "Fall (Caída)"
+  },
+  "files_generated": [
+    "modelo_caidas.pkl",
+    "scaler_caidas.pkl",
+    "feature_names.json",
+    "model_evaluation.png"
+  ],
+  "usage_example": "\n# Cargar modelo\nimport joblib\nmodel = joblib.load('modelo_caidas.pkl')\nscaler = joblib.load('scaler_caidas.pkl')\n\n# Predecir\nX_new = scaler.transform(keypoints)\nprediction = model.predict(X_new)\nprobability = model.predict_proba(X_new)[:, 1]\n"
+}
