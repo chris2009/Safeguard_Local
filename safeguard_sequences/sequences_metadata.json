@@ -1,0 +1,24 @@
+{
+  "created": "2026-01-17T16:04:40.401345",
+  "project": "SafeGuard Vision AI",
+  "sequence_length": 30,
+  "sequence_stride": 15,
+  "features_per_frame": 396,
+  "total_sequences": 164,
+  "train_sequences": 131,
+  "test_sequences": 33,
+  "train_falls": 66,
+  "test_falls": 16,
+  "shape": {
+    "X_train": [
+      131,
+      30,
+      396
+    ],
+    "X_test": [
+      33,
+      30,
+      396
+    ]
+  }
+}

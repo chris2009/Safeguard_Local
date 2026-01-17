@@ -1,0 +1,24 @@
+{
+  "project": "SafeGuard Vision AI",
+  "step": "PASO 2 - Balanceo de Dataset",
+  "date": "2026-01-17T15:22:02.621138",
+  "strategy": "undersample",
+  "target_ratio": 1.0,
+  "before": {
+    "total": 10800,
+    "falls": 1664,
+    "adl": 9136,
+    "ratio": 5.490384615384615
+  },
+  "after": {
+    "total": 3328,
+    "falls": 1664,
+    "adl": 1664,
+    "ratio": 1.0
+  },
+  "improvement": {
+    "ratio_reduction": "5.5:1 → 1.0:1",
+    "balance_achieved": true
+  },
+  "next_step": "PASO 3: Re-entrenar modelo con train_fall_detector_v2.py"
+}

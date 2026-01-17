@@ -74,13 +74,13 @@ from mediapipe.tasks.python import vision
 #   - Webcam: 0 (default), 1 (segunda cámara)
 #   - RTSP: "rtsp://usuario:password@192.168.1.100:554/stream"
 
-VIDEO_SOURCE = r"D:\APRENDIZAJE\MAESTRIA\CICLO_III\MISTI\Project_local\video_prueba_7 .mp4"  # ← CAMBIA ESTO
+VIDEO_SOURCE = r"D:\APRENDIZAJE\MAESTRIA\CICLO_III\MISTI\Project_local\video_prueba_7.mp4"  # ← CAMBIA ESTO
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # MODELO ENTRENADO
 # ═══════════════════════════════════════════════════════════════════════════════
 
-MODEL_FOLDER = r"D:\APRENDIZAJE\MAESTRIA\CICLO_III\MISTI\Project_local\train_model"  # ← CAMBIA ESTO
+MODEL_FOLDER = r"D:\APRENDIZAJE\MAESTRIA\CICLO_III\MISTI\Project_local\train_model_V2"  # ← CAMBIA ESTO
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # BLAZEPOSE
@@ -199,9 +199,9 @@ class FallDetector:
         """Carga el modelo Random Forest y el scaler."""
         print("📂 Cargando modelo de clasificación...")
         
-        model_path = os.path.join(self.model_folder, "modelo_caidas.pkl")
-        scaler_path = os.path.join(self.model_folder, "scaler_caidas.pkl")
-        features_path = os.path.join(self.model_folder, "feature_names.json")
+        model_path = os.path.join(self.model_folder, "modelo_caidas_v2.pkl")
+        scaler_path = os.path.join(self.model_folder, "scaler_caidas_v2.pkl")
+        features_path = os.path.join(self.model_folder, "feature_names_v2.json")
         
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"No se encontró el modelo: {model_path}")

@@ -1,0 +1,45 @@
+{
+  "project": "SafeGuard Vision AI",
+  "model_type": "LSTM (Bidirectional)",
+  "created": "2026-01-17T16:08:34.846300",
+  "config": {
+    "lstm_units_1": 128,
+    "lstm_units_2": 64,
+    "dense_units": 32,
+    "dropout_rate": 0.3,
+    "bidirectional": true,
+    "batch_size": 32,
+    "epochs": 100,
+    "learning_rate": 0.001,
+    "early_stopping_patience": 15,
+    "reduce_lr_patience": 5,
+    "use_class_weights": true
+  },
+  "metrics": {
+    "threshold_default": {
+      "threshold": 0.5,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0
+    },
+    "threshold_optimized": {
+      "threshold": 0.25000000000000006,
+      "accuracy": 0.5454545454545454,
+      "precision": 0.5161290322580645,
+      "recall": 1.0,
+      "f1": 0.6808510638297872
+    }
+  },
+  "files": [
+    "modelo_lstm.h5",
+    "best_model.h5",
+    "training_history.png"
+  ],
+  "usage": {
+    "sequence_length": 30,
+    "features": "keypoints + velocidad + aceleraci\u00f3n",
+    "threshold": 0.5
+  }
+}

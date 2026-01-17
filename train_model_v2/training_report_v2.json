@@ -1,0 +1,46 @@
+{
+  "project": "SafeGuard Vision AI",
+  "version": "v2 (Balanced + Anti-Overfitting)",
+  "author": "Christian Cajusol - MIT Global Teaching Labs",
+  "training_date": "2026-01-17T15:25:25.661242",
+  "model_type": "RandomForestClassifier",
+  "improvements": [
+    "Dataset balanceado (ratio 1:1)",
+    "Anti-overfitting: max_depth=10, min_samples_leaf=10",
+    "Threshold optimizado para recall",
+    "class_weight='balanced'"
+  ],
+  "parameters": {
+    "n_estimators": 200,
+    "max_depth": 10,
+    "min_samples_split": 10,
+    "min_samples_leaf": 10,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "train_accuracy": 0.9756,
+    "test_accuracy_default": 0.9384,
+    "test_accuracy_optimized": 0.5,
+    "precision_default": 0.9294,
+    "precision_optimized": 0.5,
+    "recall_default": 0.9489,
+    "recall_optimized": 1.0,
+    "f1_default": 0.9391,
+    "f1_optimized": 0.6667,
+    "auc_roc": 0.9896,
+    "cv_recall_mean": 0.9477,
+    "cv_recall_std": 0.0068,
+    "optimal_threshold": 0.0051,
+    "recommended_threshold": 0.01
+  },
+  "recommended_threshold": 0.01,
+  "files": [
+    "modelo_caidas_v2.pkl",
+    "scaler_caidas_v2.pkl",
+    "feature_names_v2.json",
+    "model_evaluation_v2.png"
+  ]
+}
