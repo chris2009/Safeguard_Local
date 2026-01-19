@@ -1,7 +1,7 @@
 {
   "project": "SafeGuard Vision AI",
   "model_type": "LSTM (Bidirectional)",
-  "created": "2026-01-17T16:08:34.846300",
+  "created": "2026-01-18T19:48:51.693393",
   "config": {
     "lstm_units_1": 128,
     "lstm_units_2": 64,
@@ -26,10 +26,10 @@
     },
     "threshold_optimized": {
       "threshold": 0.25000000000000006,
-      "accuracy": 0.5454545454545454,
-      "precision": 0.5161290322580645,
+      "accuracy": 0.48484848484848486,
+      "precision": 0.48484848484848486,
       "recall": 1.0,
-      "f1": 0.6808510638297872
+      "f1": 0.6530612244897959
     }
   },
   "files": [
